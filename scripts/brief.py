@@ -1,4 +1,4 @@
-"""Build the 4-page executive brief (report/report.html + report/report.pdf) from audit data."""
+"""Build the 4-page executive brief (report/brief-4page.html + report/brief-4page.pdf) from audit data."""
 import json, os, subprocess, sys, datetime, html
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -270,7 +270,7 @@ def build():
 
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>AI-Search Visibility Audit: Out of the Woods Construction</title><style>{CSS}</style></head><body>{page1}{page2}{page3}{page4}</body></html>"""
 
-def main(out_html="report/report.html", out_pdf="report/report.pdf"):
+def main(out_html="report/brief-4page.html", out_pdf="report/brief-4page.pdf"):
     out_html = os.path.join(ROOT, out_html); out_pdf = os.path.join(ROOT, out_pdf)
     with open(out_html, "w") as f:
         f.write(build())
