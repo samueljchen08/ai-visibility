@@ -1,0 +1,825 @@
+{
+  "overall": {
+    "n": 48,
+    "mentioned": 0
+  },
+  "built_from": {
+    "houzz": 32,
+    "firm_page": 41,
+    "gbp": 7
+  },
+  "scenarios": [
+    {
+      "key": "now",
+      "label": "Today (baseline, 2026-10-28)",
+      "reachable": 0,
+      "low": 0,
+      "high": 0,
+      "low_rate": 0.0,
+      "high_rate": 0.0
+    },
+    {
+      "key": "s1",
+      "label": "After profiles and first reviews (work: days 1 to 30)",
+      "reachable": 18,
+      "low": 3,
+      "high": 6,
+      "low_rate": 0.06250000000000001,
+      "high_rate": 0.1225
+    },
+    {
+      "key": "s2",
+      "label": "After five town pages, retitled service pages, structured data (days 31 to 60)",
+      "reachable": 33,
+      "low": 5,
+      "high": 10,
+      "low_rate": 0.11416666666666671,
+      "high_rate": 0.2177083333333333
+    },
+    {
+      "key": "s3",
+      "label": "After all town pages, FAQ, awards page, 25+25 reviews (days 61 to 90)",
+      "reachable": 46,
+      "low": 9,
+      "high": 16,
+      "low_rate": 0.18125000000000016,
+      "high_rate": 0.3375000000000003
+    }
+  ],
+  "areas": [
+    {
+      "key": "waltham",
+      "label": "Waltham (home town)",
+      "n": 4,
+      "now": 0,
+      "s1": {
+        "reachable": 4,
+        "low": 2,
+        "high": 3
+      },
+      "s2": {
+        "reachable": 4,
+        "low": 2,
+        "high": 3
+      },
+      "s3": {
+        "reachable": 4,
+        "low": 2,
+        "high": 4
+      }
+    },
+    {
+      "key": "core4",
+      "label": "Newton, Wellesley, Needham, Lexington",
+      "n": 23,
+      "now": 0,
+      "s1": {
+        "reachable": 8,
+        "low": 1,
+        "high": 2
+      },
+      "s2": {
+        "reachable": 23,
+        "low": 3,
+        "high": 6
+      },
+      "s3": {
+        "reachable": 23,
+        "low": 3,
+        "high": 7
+      }
+    },
+    {
+      "key": "ring",
+      "label": "Reading, Arlington, Belmont, Concord, Weston",
+      "n": 11,
+      "now": 0,
+      "s1": {
+        "reachable": 6,
+        "low": 1,
+        "high": 1
+      },
+      "s2": {
+        "reachable": 6,
+        "low": 1,
+        "high": 2
+      },
+      "s3": {
+        "reachable": 11,
+        "low": 2,
+        "high": 3
+      }
+    },
+    {
+      "key": "metro",
+      "label": "Boston and MetroWest",
+      "n": 10,
+      "now": 0,
+      "s1": {
+        "reachable": 0,
+        "low": 0,
+        "high": 0
+      },
+      "s2": {
+        "reachable": 0,
+        "low": 0,
+        "high": 0
+      },
+      "s3": {
+        "reachable": 8,
+        "low": 1,
+        "high": 2
+      }
+    }
+  ],
+  "conversion": {
+    "s1": {
+      "home": [
+        0.4,
+        0.7
+      ],
+      "other": [
+        0.1,
+        0.22
+      ]
+    },
+    "s2": {
+      "home": [
+        0.5,
+        0.8
+      ],
+      "other": [
+        0.12,
+        0.25
+      ]
+    },
+    "s3": {
+      "home": [
+        0.6,
+        0.9
+      ],
+      "other": [
+        0.15,
+        0.3
+      ]
+    }
+  },
+  "answers": [
+    {
+      "query_id": "kitchen-boston-best",
+      "engine": "simulated",
+      "area": "metro",
+      "geo": "Boston",
+      "service": "kitchen",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 3,
+      "mentioned": false
+    },
+    {
+      "query_id": "design-build-waltham-best",
+      "engine": "simulated",
+      "area": "waltham",
+      "geo": "Waltham",
+      "service": "design-build",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 1,
+      "mentioned": false
+    },
+    {
+      "query_id": "kitchen-arlington-best",
+      "engine": "simulated",
+      "area": "ring",
+      "geo": "Arlington",
+      "service": "kitchen",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 1,
+      "mentioned": false
+    },
+    {
+      "query_id": "bath-needham-best",
+      "engine": "simulated",
+      "area": "core4",
+      "geo": "Needham",
+      "service": "bath",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 2,
+      "mentioned": false
+    },
+    {
+      "query_id": "addition-wellesley-hire",
+      "engine": "simulated",
+      "area": "core4",
+      "geo": "Wellesley",
+      "service": "addition",
+      "intent": "hire",
+      "built_from": [
+        "firm_page"
+      ],
+      "reach": 2,
+      "mentioned": false
+    },
+    {
+      "query_id": "design-build-boston-best",
+      "engine": "simulated",
+      "area": "metro",
+      "geo": "Boston",
+      "service": "design-build",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 3,
+      "mentioned": false
+    },
+    {
+      "query_id": "design-build-arlington-best",
+      "engine": "simulated",
+      "area": "ring",
+      "geo": "Arlington",
+      "service": "design-build",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 1,
+      "mentioned": false
+    },
+    {
+      "query_id": "kitchen-waltham-cost",
+      "engine": "simulated",
+      "area": "waltham",
+      "geo": "Waltham",
+      "service": "kitchen",
+      "intent": "cost",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 1,
+      "mentioned": false
+    },
+    {
+      "query_id": "kitchen-newton-best",
+      "engine": "simulated",
+      "area": "core4",
+      "geo": "Newton",
+      "service": "kitchen",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 1,
+      "mentioned": false
+    },
+    {
+      "query_id": "design-build-lexington-hire",
+      "engine": "simulated",
+      "area": "core4",
+      "geo": "Lexington",
+      "service": "design-build",
+      "intent": "hire",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 1,
+      "mentioned": false
+    },
+    {
+      "query_id": "kitchen-belmont-best",
+      "engine": "simulated",
+      "area": "ring",
+      "geo": "Belmont",
+      "service": "kitchen",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 1,
+      "mentioned": false
+    },
+    {
+      "query_id": "bath-reading-best",
+      "engine": "simulated",
+      "area": "ring",
+      "geo": "Reading",
+      "service": "bath",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 3,
+      "mentioned": false
+    },
+    {
+      "query_id": "addition-lexington-hire",
+      "engine": "simulated",
+      "area": "core4",
+      "geo": "Lexington",
+      "service": "addition",
+      "intent": "hire",
+      "built_from": [
+        "firm_page"
+      ],
+      "reach": 2,
+      "mentioned": false
+    },
+    {
+      "query_id": "design-build-newton-best",
+      "engine": "simulated",
+      "area": "core4",
+      "geo": "Newton",
+      "service": "design-build",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 1,
+      "mentioned": false
+    },
+    {
+      "query_id": "design-build-belmont-hire",
+      "engine": "simulated",
+      "area": "ring",
+      "geo": "Belmont",
+      "service": "design-build",
+      "intent": "hire",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 1,
+      "mentioned": false
+    },
+    {
+      "query_id": "bath-wellesley-cost",
+      "engine": "simulated",
+      "area": "core4",
+      "geo": "Wellesley",
+      "service": "bath",
+      "intent": "cost",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 2,
+      "mentioned": false
+    },
+    {
+      "query_id": "bath-wellesley-best",
+      "engine": "simulated",
+      "area": "core4",
+      "geo": "Wellesley",
+      "service": "bath",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 2,
+      "mentioned": false
+    },
+    {
+      "query_id": "kitchen-waltham-best",
+      "engine": "simulated",
+      "area": "waltham",
+      "geo": "Waltham",
+      "service": "kitchen",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 1,
+      "mentioned": false
+    },
+    {
+      "query_id": "bath-weston-best",
+      "engine": "simulated",
+      "area": "ring",
+      "geo": "Weston",
+      "service": "bath",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 1,
+      "mentioned": false
+    },
+    {
+      "query_id": "addition-concord-hire",
+      "engine": "simulated",
+      "area": "ring",
+      "geo": "Concord",
+      "service": "addition",
+      "intent": "hire",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 3,
+      "mentioned": false
+    },
+    {
+      "query_id": "design-build-wellesley-best",
+      "engine": "simulated",
+      "area": "core4",
+      "geo": "Wellesley",
+      "service": "design-build",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 2,
+      "mentioned": false
+    },
+    {
+      "query_id": "design-build-weston-hire",
+      "engine": "simulated",
+      "area": "ring",
+      "geo": "Weston",
+      "service": "design-build",
+      "intent": "hire",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 1,
+      "mentioned": false
+    },
+    {
+      "query_id": "addition-needham-cost",
+      "engine": "simulated",
+      "area": "core4",
+      "geo": "Needham",
+      "service": "addition",
+      "intent": "cost",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 2,
+      "mentioned": false
+    },
+    {
+      "query_id": "addition-needham-hire",
+      "engine": "simulated",
+      "area": "core4",
+      "geo": "Needham",
+      "service": "addition",
+      "intent": "hire",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 2,
+      "mentioned": false
+    },
+    {
+      "query_id": "kitchen-wellesley-best",
+      "engine": "simulated",
+      "area": "core4",
+      "geo": "Wellesley",
+      "service": "kitchen",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 2,
+      "mentioned": false
+    },
+    {
+      "query_id": "kitchen-metrowest-best",
+      "engine": "simulated",
+      "area": "metro",
+      "geo": "MetroWest",
+      "service": "kitchen",
+      "intent": "best",
+      "built_from": [
+        "firm_page"
+      ],
+      "reach": 3,
+      "mentioned": false
+    },
+    {
+      "query_id": "bath-boston-best",
+      "engine": "simulated",
+      "area": "metro",
+      "geo": "Boston",
+      "service": "bath",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 3,
+      "mentioned": false
+    },
+    {
+      "query_id": "addition-reading-hire",
+      "engine": "simulated",
+      "area": "ring",
+      "geo": "Reading",
+      "service": "addition",
+      "intent": "hire",
+      "built_from": [
+        "firm_page"
+      ],
+      "reach": 3,
+      "mentioned": false
+    },
+    {
+      "query_id": "design-build-needham-best",
+      "engine": "simulated",
+      "area": "core4",
+      "geo": "Needham",
+      "service": "design-build",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 2,
+      "mentioned": false
+    },
+    {
+      "query_id": "design-build-concord-hire",
+      "engine": "simulated",
+      "area": "ring",
+      "geo": "Concord",
+      "service": "design-build",
+      "intent": "hire",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 3,
+      "mentioned": false
+    },
+    {
+      "query_id": "cabinetry-boston-best",
+      "engine": "simulated",
+      "area": "metro",
+      "geo": "Boston",
+      "service": "cabinetry",
+      "intent": "best",
+      "built_from": [
+        "firm_page"
+      ],
+      "reach": null,
+      "mentioned": false
+    },
+    {
+      "query_id": "design-build-metrowest-best",
+      "engine": "simulated",
+      "area": "metro",
+      "geo": "MetroWest",
+      "service": "design-build",
+      "intent": "best",
+      "built_from": [
+        "firm_page"
+      ],
+      "reach": 3,
+      "mentioned": false
+    },
+    {
+      "query_id": "kitchen-lexington-best",
+      "engine": "simulated",
+      "area": "core4",
+      "geo": "Lexington",
+      "service": "kitchen",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 1,
+      "mentioned": false
+    },
+    {
+      "query_id": "bath-newton-best",
+      "engine": "simulated",
+      "area": "core4",
+      "geo": "Newton",
+      "service": "bath",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 1,
+      "mentioned": false
+    },
+    {
+      "query_id": "addition-newton-hire",
+      "engine": "simulated",
+      "area": "core4",
+      "geo": "Newton",
+      "service": "addition",
+      "intent": "hire",
+      "built_from": [
+        "firm_page"
+      ],
+      "reach": 2,
+      "mentioned": false
+    },
+    {
+      "query_id": "addition-boston-hire",
+      "engine": "simulated",
+      "area": "metro",
+      "geo": "Boston",
+      "service": "addition",
+      "intent": "hire",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 3,
+      "mentioned": false
+    },
+    {
+      "query_id": "design-build-reading-best",
+      "engine": "simulated",
+      "area": "ring",
+      "geo": "Reading",
+      "service": "design-build",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 3,
+      "mentioned": false
+    },
+    {
+      "query_id": "kitchen-newton-cost",
+      "engine": "simulated",
+      "area": "core4",
+      "geo": "Newton",
+      "service": "kitchen",
+      "intent": "cost",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 1,
+      "mentioned": false
+    },
+    {
+      "query_id": "addition-needham-hire",
+      "engine": "google-ai-mode",
+      "area": "core4",
+      "geo": "Needham",
+      "service": "addition",
+      "intent": "hire",
+      "built_from": [
+        "gbp"
+      ],
+      "reach": 2,
+      "mentioned": false
+    },
+    {
+      "query_id": "bath-wellesley-best",
+      "engine": "google-ai-mode",
+      "area": "core4",
+      "geo": "Wellesley",
+      "service": "bath",
+      "intent": "best",
+      "built_from": [
+        "gbp"
+      ],
+      "reach": 2,
+      "mentioned": false
+    },
+    {
+      "query_id": "design-build-lexington-hire",
+      "engine": "google-ai-mode",
+      "area": "core4",
+      "geo": "Lexington",
+      "service": "design-build",
+      "intent": "hire",
+      "built_from": [
+        "gbp"
+      ],
+      "reach": 1,
+      "mentioned": false
+    },
+    {
+      "query_id": "design-build-metrowest-best",
+      "engine": "google-ai-mode",
+      "area": "metro",
+      "geo": "MetroWest",
+      "service": "design-build",
+      "intent": "best",
+      "built_from": [
+        "gbp"
+      ],
+      "reach": 3,
+      "mentioned": false
+    },
+    {
+      "query_id": "design-build-waltham-best",
+      "engine": "google-ai-mode",
+      "area": "waltham",
+      "geo": "Waltham",
+      "service": "design-build",
+      "intent": "best",
+      "built_from": [
+        "gbp"
+      ],
+      "reach": 1,
+      "mentioned": false
+    },
+    {
+      "query_id": "kitchen-boston-best",
+      "engine": "google-ai-mode",
+      "area": "metro",
+      "geo": "Boston",
+      "service": "kitchen",
+      "intent": "best",
+      "built_from": [
+        "gbp"
+      ],
+      "reach": null,
+      "mentioned": false
+    },
+    {
+      "query_id": "kitchen-newton-best",
+      "engine": "google-ai-mode",
+      "area": "core4",
+      "geo": "Newton",
+      "service": "kitchen",
+      "intent": "best",
+      "built_from": [
+        "gbp"
+      ],
+      "reach": 1,
+      "mentioned": false
+    },
+    {
+      "query_id": "bath-wellesley-best",
+      "engine": "perplexity",
+      "area": "core4",
+      "geo": "Wellesley",
+      "service": "bath",
+      "intent": "best",
+      "built_from": [
+        "firm_page"
+      ],
+      "reach": 2,
+      "mentioned": false
+    },
+    {
+      "query_id": "kitchen-boston-best",
+      "engine": "perplexity",
+      "area": "metro",
+      "geo": "Boston",
+      "service": "kitchen",
+      "intent": "best",
+      "built_from": [
+        "houzz",
+        "firm_page"
+      ],
+      "reach": 3,
+      "mentioned": false
+    },
+    {
+      "query_id": "kitchen-newton-best",
+      "engine": "perplexity",
+      "area": "core4",
+      "geo": "Newton",
+      "service": "kitchen",
+      "intent": "best",
+      "built_from": [
+        "firm_page"
+      ],
+      "reach": 2,
+      "mentioned": false
+    }
+  ]
+}

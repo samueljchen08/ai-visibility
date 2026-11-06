@@ -4,3 +4,4 @@ __pycache__/
 report/report-full.html
 report/report.html
 results/simulated/*.prompt.md
+report/brief-4page.html
